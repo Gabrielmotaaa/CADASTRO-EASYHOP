@@ -1,1 +1,1 @@
-# CADASTRO EASYHOP
+# Primera alteração do codigo no dia 30/07/2024, criando algumas configurções de tela, preparando o repositorio.
