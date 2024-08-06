@@ -8,5 +8,11 @@ namespace CADASTRO_EASYHOP.Controllers
         {
             return View();
         }
+
+ public IActionResult AtivarBase()
+        {
+            return View();
+        }
+        
     }
 }
