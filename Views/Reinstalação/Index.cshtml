@@ -2,53 +2,75 @@
     ViewData["Title"] = "Renstalação";
 }
 
-    <h1 class="display-4"> Reinstalação de base </h1> 
-<table dark class="table table-dark"
-    <thead>
-        <tr>
-            <th scope="col">#</th>
-            <th scope="col">Base</th>
-            <th scope="col">Dispositivo</th>
-            <th scope="col">E-mail</th>
-             <th scope="col"></th>
-        </tr>
-    </thead>
-    <tbody>
-        <tr>
-            <th scope="row">1</th>
-            <td>0073</td>
-            <td>007548-0046-8952-4568-004587820</td>
-            <td>0073@gmail.com</td>
-            <td>
-         
-                <a class="btn btn-primary">Editar</a>
-                <a class="btn btn-primary">Alterar</a>
-               
-        </tr>
-        <tr>
-            <th scope="row">2</th>
-            <td>0078</td>
-            <td>045754-5896-7514-4587-554785211</td>
-            <td>0078@gmail.com</td>
-            <td>
-                
-              <div class="btn-group" role="group" aria-label="Basic Example">
-                <a role="btn btn-primary">Editar</a>
-                <a role="btn btn-primary">Alterar</a>
-              </div> 
+    <h1 class="display-4"> Instalar Base </h1> 
+<form class="row g-3 needs-validation" novalidate>
+  <div class="col-md-4">
+    <label for="validationCustom01" class="form-label">Base</label>
+    <input type="text" class="form-control" id="validationCustom01" value="" required>
+    <div class="valid-feedback">
+    </div>
+  </div>
+  <div class="col-md-4">
+    <label for="validationCustom02" class="form-label">DISPOSITIVO</label>
+    <input type="text" class="form-control" id="validationCustom02" value="" required>
+    <div class="valid-feedback">
+    </div>
+  </div>
+  <div class="col-md-4">
+    <label for="validationCustomUsername" class="form-label">SENHA</label>
+    <div class="input-group has-validation">
+      <span class="input-group-text" id="inputGroupPrepend"></span>
+      <input type="text" class="form-control" id="validationCustomUsername" aria-describedby="inputGroupPrepend" required>
+      <div class="invalid-feedback">
+      </div>
+    </div>
+  </div>
+  <div class="col-md-6">
+    <label for="validationCustom03" class="form-label">E-MAIL</label>
+    <input type="text" class="form-control" id="validationCustom03" required>
+    <div class="invalid-feedback">
+    </div>
+  </div>
+  <div class="col-md-3">
+    <label for="validationCustom04" class="form-label">MODELO</label>
+    <select class="form-select" id="validationCustom04" required>
+      <option selected disabled value="">Escolha o Modelo</option>
+      <option>S9 FE ULTRA</option>
+      <option>S9 FE</option>
+      <option>S9 FE +</option>
+      <option>PAD 5</option>
+      <option>PAD 5 PRO</option>
+      <option>PAD 6</option>
+      <option>S8</option>
+      <option>S7 PLUS</option>
+      <option>S7 5G</option>
+      <option>S7</option>
+      <option>S7 LITE</option>
 
-        </tr>
-        <tr>
-            <th scope="row">3</th>
-            <td>0079</td>
-            <td>4878924-7846-8641-7895</td>
-            <td>0079@gmail.com</td>
-            <td>
-                
-              
-                <a class="btn btn-primary">Editar</a>
-                <a class="btn btn-primary">Alterar</a>
-            
+    </select>
+    <div class="invalid-feedback">
+    </div>
+  </div>
+  <div class="col-md-3">
+    <label for="validationCustom05" class="form-label">N/S</label>
+    <input type="text" class="form-control" id="validationCustom05" required>
+    <div class="invalid-feedback">
+    </div>
+  </div>
+  <div class="col-12">
+    <div class="form-check">
+      <input class="form-check-input" type="checkbox" value="" id="invalidCheck" required>
+      <label class="form-check-label" for="invalidCheck">
+        Aceitar termos e Condições
+      </label>
+      <div class="invalid-feedback">
+      </div>
+    </div>
+  </div>
+  <div class="col-12">
+    <button class="btn btn-primary" type="submit">ATIVAR BASE</button>
+  </div>
+</form>
         </tr>
     </tbody>
 </table>
