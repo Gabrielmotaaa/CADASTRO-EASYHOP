@@ -1,82 +1,54 @@
-﻿
-@{
-    ViewData["Title"] = "Novo Representante";
-}
-
-@{
-    ViewData["Title"] = "Renstalação";
-}
-
-    <h1 class="display-4"> Instalar Base </h1> 
-<form class="row g-3 needs-validation" novalidate>
-  <div class="col-md-4">
-    <label for="validationCustom01" class="form-label">Base</label>
-    <input type="text" class="form-control" id="validationCustom01" value="" required>
-    <div class="valid-feedback">
+﻿@{
+ViewData["Title"] = "Renstalação";
+}  
+<h1 class="display-4"> Instalar Base </h1>
+<form class="row g-3" id="form-base">
+    <div class="col-md-4">
+        <label for="base" class="form-label">Base</label>
+        <input type="text" class="form-control" id="base" name="base">
     </div>
-  </div>
-  <div class="col-md-4">
-    <label for="validationCustom02" class="form-label">DISPOSITIVO</label>
-    <input type="text" class="form-control" id="validationCustom02" value="" required>
-    <div class="valid-feedback">
+    <div class="col-md-4">
+        <label for="dispositivo" class="form-label">DISPOSITIVO</label>
+        <input type="text" class="form-control" id="dispositivo" name="dispositivo">
     </div>
-  </div>
-  <div class="col-md-4">
-    <label for="validationCustomUsername" class="form-label">SENHA</label>
-    <div class="input-group has-validation">
-      <span class="input-group-text" id="inputGroupPrepend"></span>
-      <input type="text" class="form-control" id="validationCustomUsername" aria-describedby="inputGroupPrepend" required>
-      <div class="invalid-feedback">
-      </div>
+    <div class="col-md-4">
+        <label for="senha" class="form-label">SENHA</label>
+        <input type="password" class="form-control" id="senha" name="senha">
     </div>
-  </div>
-  <div class="col-md-6">
-    <label for="validationCustom03" class="form-label">E-MAIL</label>
-    <input type="text" class="form-control" id="validationCustom03" required>
-    <div class="invalid-feedback">
+    <div class="col-md-6">
+        <label for="email" class="form-label">E-MAIL</label>
+        <input type="email" class="form-control" id="email" name="email">
     </div>
-  </div>
-  <div class="col-md-3">
-    <label for="validationCustom04" class="form-label">MODELO</label>
-    <select class="form-select" id="validationCustom04" required>
-      <option selected disabled value="">Escolha o Modelo</option>
-      <option>S9 FE ULTRA</option>
-      <option>S9 FE</option>
-      <option>S9 FE +</option>
-      <option>PAD 5</option>
-      <option>PAD 5 PRO</option>
-      <option>PAD 6</option>
-      <option>S8</option>
-      <option>S7 PLUS</option>
-      <option>S7 5G</option>
-      <option>S7</option>
-      <option>S7 LITE</option>
-
-    </select>
-    <div class="invalid-feedback">
+    <div class="col-md-3">
+        <label for="modelo" class="form-label">MODELO</label>
+        <select class="form-select" id="modelo" name="modelo">
+            <option selected disabled value="">Escolha o Modelo</option>
+            <option>S9 FE ULTRA </option>
+            <option>S9 FE </option>
+            <option>S9 FE +</option>
+            <option>PAD 5</option>
+            <option>PAD 5 PRO</option>
+            <option>PAD 6</option>
+            <option>S8</option>
+            <option>S7 PLUS</option>
+            <option>S7 5G</option>
+            <option>S7</option>
+            <option>S7 LITE</option>
+        </select>
     </div>
-  </div>
-  <div class="col-md-3">
-    <label for="validationCustom05" class="form-label">N/S</label>
-    <input type="text" class="form-control" id="validationCustom05" required>
-    <div class="invalid-feedback">
+    <div class="col-md-3">
+        <label for="numeroSerie" class="form-label">N/S</label>
+        <input type="numeroSerie" class="form-control" id="numeroSerie" name="numeroSerie">
     </div>
-  </div>
-  <div class="col-12">
-    <div class="form-check">
-      <input class="form-check-input" type="checkbox" value="" id="invalidCheck" required>
-      <label class="form-check-label" for="invalidCheck">
-        Aceitar termos e Condições
-      </label>
-      <div class="invalid-feedback">
-      </div>
+    <div class="col-12">
+        <div class="form-check">
+            <input class="form-check-input" type="checkbox" value="" id="concluir">
+            <label class="form-check-label" for="concluir">
+            Deseja Concluir a Instalação ?
+            </label>
+        </div>
     </div>
-  </div>
-  <div class="col-12">
-    <button class="btn btn-primary" type="submit">ATIVAR BASE</button>
-  </div>
+    <div class="col-12">
+        <button class="btn btn-primary" type="submit">ATIVAR BASE</button>
+    </div>
 </form>
-        </tr>
-    </tbody>
-</table>
-</div>
