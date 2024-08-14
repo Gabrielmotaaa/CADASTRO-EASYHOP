@@ -1,7 +1,20 @@
+using Autofac.Core;
+using AutoMapper.Configuration;
+using CADASTRO_EASYHOP.Data;
+using Microsoft.AspNetCore.Mvc.ModelBinding.Binders;
+using Microsoft.Extensions.Configuration;
+using System.Net;
+using System.Reflection;
+
+
+
+
+
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
 builder.Services.AddControllersWithViews();
+
 
 var app = builder.Build();
 
