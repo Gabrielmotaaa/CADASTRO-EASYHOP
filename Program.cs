@@ -1,6 +1,5 @@
 using Autofac.Core;
 using AutoMapper.Configuration;
-using CADASTRO_EASYHOP.Data;
 using Microsoft.AspNetCore.Mvc.ModelBinding.Binders;
 using Microsoft.Extensions.Configuration;
 using System.Net;
