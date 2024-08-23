@@ -1,5 +1,9 @@
+
 using ControledeContatos.Data;
 using Microsoft.EntityFrameworkCore;
+using Autofac.Core;
+using AutoMapper.Configuration;
+using Microsoft.AspNetCore.Mvc.ModelBinding.Binders;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
