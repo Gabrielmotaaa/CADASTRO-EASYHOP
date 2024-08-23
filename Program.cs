@@ -1,20 +1,17 @@
-using Autofac.Core;
-using AutoMapper.Configuration;
-using CADASTRO_EASYHOP.Data;
-using Microsoft.AspNetCore.Mvc.ModelBinding.Binders;
+using ControledeContatos.Data;
+using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
-using System.Net;
-using System.Reflection;
-
-
-
-
+using Microsoft.Extensions.DependencyInjection;
+using Microsoft.Extensions.Hosting;
+using System;
 
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
 builder.Services.AddControllersWithViews();
 
+// Configure Entity Framework with SQL Server
+builder.Services.AddDbContext<Base>(options =>options.UseSqlServer(builder.Configuration.GetConnectionString("DataBase")));
 
 var app = builder.Build();
 
